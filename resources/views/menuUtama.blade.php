@@ -1,5 +1,7 @@
 @extends('layout')
-@section('ttile', $title)
+
+@section('title', $title)
+
 @section('konten')
     
 <!DOCTYPE html>
@@ -11,8 +13,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- isi konten disini -->
+    <div class="container_menuUtama">
+        <div class="img">
+            <img src="{{asset('img/menu_Utama.jpg')}}" alt="" width="300px">
+        </div>
+    </div>
 </body>
 </html>
-    
+
 @endsection
+    

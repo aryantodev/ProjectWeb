@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: aqua;
+    height: 9rem;
+    display: block;
+}
+.menuAtas{
+    background-color: rgb(255, 255, 255);
+    height: 7rem;
+    display: flex;
+        
+}
+
+.menuAtas .logo{
+     width: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+}
+
+.menuAtas .informasi{
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.menuAtas .informasi ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menuAtas .informasi ul li a{
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+}
+
+.menuAtas .informasi ul li a span{
+    margin-left: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(7, 138, 138);
+}
+
+.menuAtas .informasi ul li a span:hover{
+    color: black;
+}
+
+.navbar {
+    display: flex; /* Menggunakan flexbox untuk navbar */
+    background-color: #ffffff; /* Warna latar belakang navbar */
+    padding: 10px;
+    justify-content: center; /* Menyusun item di tengah */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+}
+
+.menu-item {
+    position: relative; /* Untuk menempatkan dropdown menu */
+    margin-right: 20px; /* Jarak antar menu */
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white; /* Warna teks tautan */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Menggunakan flexbox untuk menu link */
+    align-items: center; /* Menyusun item di tengah secara vertikal */
+    justify-content: center; /* Menyusun item di tengah secara horizontal */
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center the navbar items */
+}
+.navbar {
+    justify-content: center; 
+}
+
+@media (max-width: 767.98px) {
+    .menuAtas .logo img {
+        width: 55px;
+    }
+    .menuAtas .informasi ul li a span {
+        font-size: 5px;
+        width: 39px;
+    }
+
+    .menuAtas .informasi ul li a img {
+       width: 15px;
+    }
+}
