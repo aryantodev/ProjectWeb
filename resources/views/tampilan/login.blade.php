@@ -25,7 +25,7 @@
                     {{ session('error') }}
                 </div>
             @endif
-            <form id="loginForm" action="{{ route('do_login') }}" method="POST">
+            <form id="loginForm" action="{{ route('login') }}" method="POST">
                 @csrf
                 <div class="form-group">
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>

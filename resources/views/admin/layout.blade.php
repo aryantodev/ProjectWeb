@@ -15,7 +15,7 @@
             <div class="col-md-2 text-center">
                 <div class="logo">
                     <img src="{{ asset('img/logo_login.jpg') }}" alt="signup" width="100px">
-                </div>
+                </div>  
             </div>
             <div class="col-md-10">
                 <div class="informasi">
@@ -48,6 +48,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="{{ url('/admin/menuUtama') }}">Home</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle menu-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Profil
@@ -70,24 +73,13 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle menu-link" href="#" id="navbarDropdownJadwal" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Jadwal Praktik
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownJadwal">
-                            <a class="dropdown-item" href="#">Spesialis Anak</a>
-                            <a class="dropdown-item" href="#">Spesialis THT</a>
-                            <a class="dropdown-item" href="#">Spesialis Gigi</a>
-                            <a class="dropdown-item" href="#">Spesialis Bedah</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle menu-link" href="#" id="navbarDropdownPromo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Promo dan layanan
+                            Pemesanan
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownPromo">
                             <a class="dropdown-item" href="#">Promo</a>
-                            <a class="dropdown-item" href="#">Rawat Inap</a>
-                            <a class="dropdown-item" href="#">UGD</a>
+                            <a class="dropdown-item" href="{{ url('/admin/rawatInap/create')}}">Rawat Inap</a>
+                            <a class="dropdown-item" href="{{url('/UGD/ugd')}}">UGD</a>
                             <a class="dropdown-item" href="#">Pembelian Obat</a>
                         </div>
                     </li>
